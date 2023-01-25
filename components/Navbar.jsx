@@ -1,6 +1,10 @@
 import Link from 'next/link'
 import React from 'react'
-import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
+import {AiOutlineClose, AiOutlineMenu, AiOutlineMail} from 'react-icons/ai'
+import {FaLinkedinIn} from 'react-icons/fa'
+import {FaGithub} from 'react-icons/fa'
+import {BsFillPersonLinesFill} from 'react-icons/bs'
+
 const Navbar = () => {
     return (
         <div className='fixed w-full h-20 shadow-xl z-[100]'>
@@ -35,12 +39,54 @@ const Navbar = () => {
                 bg-[#ecf0f3] p-10 ease-in duration-500'>
                     <div>
                         <div className='flex w-full items-center justify-between'>
-                            <h1 className='text-4xl font-bold font-signature'>Francis Omondi</h1>
-                            <div>
+                            <h1 className='text-3xl font-bold font-signature'>Francis Omondi</h1>
+                            <div className='rounded-full shadow-lg shadow-gray-00 p-3 cursor-pointer'>
                                 <AiOutlineClose/>
                             </div>
                         </div>
+                        <div className='border-b border-gray-300 my-4'>
+                        <p className='w-[85%] md:w-[95%] py-2'>Full Stack Web Solution</p>
+                        </div>
                     </div>
+
+                    <div className=' py-4 flex flex-col'>
+                        <ul className='uppercase'>
+                            <Link href='www.facebook.com'>
+                                <li className='py-4 text-sm'>Home</li>
+                            </Link>
+                             <Link href='www.facebook.com'>
+                                <li className='py-4 text-sm'>About</li>
+                            </Link>
+                             <Link href='www.facebook.com'>
+                                <li className='py-4 text-sm'>Skills</li>
+                            </Link>
+                             <Link href='www.facebook.com'>
+                                <li className='py-4 text-sm'>Projects</li>
+                            </Link>
+                             <Link href='www.facebook.com'>
+                                <li className='py-4 text-sm'>Contacts</li>
+                            </Link>
+                        </ul>
+                         <div className='pt-20'>
+                            <p className='uppercase tracking-widest text-[#5651e5] font-bold'>Lets connect</p>
+                            <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                                <FaLinkedinIn/> 
+                                </div>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                                <FaGithub/> 
+                                </div>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                                <AiOutlineMail/> 
+                                </div>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                                <BsFillPersonLinesFill/> 
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                       
                 </div>
             </div>
         </div>

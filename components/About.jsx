@@ -16,7 +16,7 @@ const About = () => {
           <p className='py-2 text-gray-600'>I have experience building products for web app users, meeting highest
             standards for design, user experience, best practices, usability and
             speed. Responding to challenges by designing and developing solutions
-            and building applications aligned to customer's services. Translating
+            and building applications aligned to customers services. Translating
             solutions into code and working across many different APIs, third-party
             integrations and databases</p>
           <p className='py-2 text-gray-600'>I bring hands-on experience participating in and leading product design

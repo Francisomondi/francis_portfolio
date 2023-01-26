@@ -27,8 +27,8 @@ const About = () => {
             meeting and exceeding customer demands</p>
           <p className='py-2 text-gray-600 underline cursor-pointer'>Check out some of my projects</p>
         </div>
-        <div>
-          <Image src={aziz} alt='my hero image'/>
+        <div className='w-full h-auto shadow-xl shadow-gray-800 rounded-xl flex items-center justify-center p-4 hover:scale-105 duration-300'>
+          <Image className='rounded-xl' src={aziz} alt='my hero image'/>
 
         </div>
       </div>

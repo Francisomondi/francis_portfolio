@@ -1,5 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/jsx-no-comment-textnodes */
+
 import React from 'react'
 import Image from 'next/image'
 import aziz from '../public/assets/aziz.jpg'
@@ -12,7 +11,7 @@ const About = () => {
       <div className='max-w-[1024px] m-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
           <h2 className='py-4'>Who I Am </h2>
-          <p className='py-2 text-gray-600'>// I am not your normal developer</p>
+          <p className='py-2 text-gray-600'> I am not your normal developer</p>
           <p className='py-2 text-gray-600'>I have experience building products for web app users, meeting highest
             standards for design, user experience, best practices, usability and
             speed. Responding to challenges by designing and developing solutions

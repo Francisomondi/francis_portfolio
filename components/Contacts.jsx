@@ -1,6 +1,7 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
-import { AiOutlineMail } from 'react-icons/ai'
+import { AiOutlineMail, AiOutlineToTop } from 'react-icons/ai'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import c from '../public/assets/c.jpg'
@@ -74,11 +75,20 @@ const Contacts = () => {
                 <label className='uppercase text-sm py-2'>Message</label>
                 <textarea className='border-2 rounded-lg p-3 border-gray-300' rows={10}></textarea>    
             </div>
+            <button className='w-full p-4 text-gray-100 mt-4'>Send message</button>
        </form>
         </div>
         
         </div>
 
+        </div>
+
+        <div className='flex justify-center py-12'>
+            <Link href='/'>
+                <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <AiOutlineToTop className='text-[#5b201d9e]'/>
+                </div>
+            </Link>
         </div>
     </div>
 

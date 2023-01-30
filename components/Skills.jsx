@@ -11,7 +11,7 @@ import github from '../public/assets/github.png'
 
 const Skills = () => {
   return (
-    <div className='w-full lg:h-screen p-2'>
+    <div id='skills' className='w-full lg:h-screen p-2'>
         <div className='max-w-[1240px] max-auto flex flex-col justify-center h-full'>
         <h2 className='py-4'>What i can do</h2>
           <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8' >
@@ -90,7 +90,7 @@ const Skills = () => {
                   </div>
 
                   <div className='flex flex-col items-center justify-center'>
-                  <h2>Nextjs</h2>
+                  <h2>Next js</h2>
                   </div>
                 </div>
             </div>

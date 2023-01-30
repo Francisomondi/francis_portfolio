@@ -5,7 +5,7 @@ import arrayDestruct from '../public/assets/portfolio/arrayDestruct.jpg'
 
 const Projects = () => {
   return (
-    <div className='w-full'>
+    <div id='projects' className='w-full'>
         <div className='max-w-[1240px] mx-auto px-2 py-16'>
         <h2 className='py-4'>My Projects </h2>
             <div className='grid md:grid-cols-2 gap-8'>

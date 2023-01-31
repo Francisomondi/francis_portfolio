@@ -28,12 +28,15 @@ const Navbar = () => {
 
 
     return (
-        <div className={shadow? 'fixed w-full h-20 shadow-xl z-[100]': 'fixed w-full h-20 z-[100]'}>
+        <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]': 'fixed w-full h-20 z-[100]'}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-                <h1 className='text-4xl font-bold font-signature'>Francis Omondi</h1>
+            <Link href='/'>
+              <h1 className='text-4xl font-bold font-signature'>Francis Omondi</h1>
+            </Link>
+              
                 <div>
                     <ul className='hidden md:flex'>
-                    <Link href='/#main'>
+                    <Link href='/'>
                     <li className='ml-10 text-sm uppercase hover: border-b'>Home</li>
                     </Link>
                     <Link href='/#about'>
@@ -71,37 +74,49 @@ const Navbar = () => {
 
                     <div className=' py-4 flex flex-col'>
                         <ul className='uppercase'>
-                            <Link href='www.facebook.com'>
+                            <Link href='/'>
                                 <li className='py-4 text-sm'>Home</li>
                             </Link>
-                             <Link href='www.facebook.com'>
+                             <Link href='#about'>
                                 <li className='py-4 text-sm'>About</li>
                             </Link>
-                             <Link href='www.facebook.com'>
+                             <Link href='#skills'>
                                 <li className='py-4 text-sm'>Skills</li>
                             </Link>
-                             <Link href='www.facebook.com'>
+                             <Link href='#projects'>
                                 <li className='py-4 text-sm'>Projects</li>
                             </Link>
-                             <Link href='www.facebook.com'>
+                             <Link href='#contacts'>
                                 <li className='py-4 text-sm'>Contacts</li>
                             </Link>
                         </ul>
                          <div className='pt-20'>
                             <p className='uppercase tracking-widest text-[#5651e5] font-bold'>Lets connect</p>
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                            <Link href='https://www.linkedin.com/in/francis-omondi-958749172/'>
+                              <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
                                 <FaLinkedinIn/> 
                                 </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                            </Link>
+
+                               <Link href='https://github.com/Francisomondi'>
+                               <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
                                 <FaGithub/> 
                                 </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                               </Link>
+
+                               <link href='/'>
+                               <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
                                 <AiOutlineMail/> 
                                 </div>
+                               </link>
+                                
+                                <Link href='/'>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
                                 <BsFillPersonLinesFill/> 
                                 </div>
+                                </Link>
+                                
                             </div>
                         </div>
                        

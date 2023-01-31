@@ -28,18 +28,31 @@ const Contacts = () => {
                 <div>
                     <p className='uppercase pt-8'>Connect With Me</p>
                     <div className='flex items-center justify-between py-4'>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
+
+                    <Link  href='https://www.linkedin.com/in/francis-omondi-958749172/'>
+                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                                  <FaLinkedinIn/> 
                                 </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    </Link>
+                     <Link  href='https://github.com/Francisomondi'>
+                                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                                   <FaGithub/> 
                                 </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    </Link>
+                     <Link  href='https://github.com/Francisomondi'>
+                                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                                  <AiOutlineMail/> 
                                 </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    </Link>
+                     <Link href='https://twitter.com/ZengMasters'>
+                                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                                   <BsFillPersonLinesFill/> 
                                 </div>
+                    </Link>
+                                
+                               
+                               
+                               
                     </div>
                 </div>
             </div>

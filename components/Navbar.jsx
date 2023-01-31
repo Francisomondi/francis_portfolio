@@ -105,13 +105,13 @@ const Navbar = () => {
                                 </div>
                                </Link>
 
-                               <link href='/'>
+                               <Link href='/'>
                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
                                 <AiOutlineMail/> 
                                 </div>
-                               </link>
+                               </Link>
                                 
-                                <Link href='/'>
+                                <Link href='https://twitter.com/ZengMasters'>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
                                 <BsFillPersonLinesFill/> 
                                 </div>

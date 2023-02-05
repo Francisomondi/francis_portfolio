@@ -4,16 +4,58 @@ import React from 'react'
 import { AiOutlineMail, AiOutlineToTop } from 'react-icons/ai'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import c from '../public/assets/aziz.jpg'
+import c from '../public/assets/c.jpg'
 
 const Contacts = () => {
-  return (
+
+    const SocialLinks=[
+        {
+            id:1,
+            child: (
+                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                    <FaLinkedinIn/> 
+                </div>
+            ),
+            href:'https://www.linkedin.com/in/francis-omondi-958749172/',
+            target:'_blank'
+        },
+        {
+            id:2,
+            child: (
+                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                    <FaGithub/> 
+                </div>
+            ),
+            href:'https://github.com/Francisomondi',
+            target:'_blank'
+        },
+        {
+            id:3,
+            child: (
+                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                    <AiOutlineMail/> 
+                </div>
+            ),
+            href:'mailto:francisomondi17@gmail.com'
+        },
+        {
+            id:4,
+            child: (
+                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                    <BsFillPersonLinesFill/> 
+                </div>
+            ),
+            href:'/francis.pdf',
+            download: true
+        }
+    ]
+return (
     <div id='contacts' className='w-full lg:h-screen'>
     <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
     <p className='text-xl tracking-widest uppercase text-[#5b201d9e]'>Contacts</p>
     <h2 className='py-4'>Get In Touch</h2>
         
-         <div className='grid lg:grid-cols-5 gap-8'>
+        <div className='grid lg:grid-cols-5 gap-8'>
         {/*right*/}
         <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-800 rounded-xl p-4'>
             <div className='lg:p-4 h-full'>
@@ -28,31 +70,15 @@ const Contacts = () => {
                 <div>
                     <p className='uppercase pt-8'>Connect With Me</p>
                     <div className='flex items-center justify-between py-4'>
-
-                    <Link  href='https://www.linkedin.com/in/francis-omondi-958749172/'>
-                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                 <FaLinkedinIn/> 
-                                </div>
-                    </Link>
-                     <Link  href='https://github.com/Francisomondi'>
-                                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                  <FaGithub/> 
-                                </div>
-                    </Link>
-                     <Link  href='https://github.com/Francisomondi'>
-                                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                 <AiOutlineMail/> 
-                                </div>
-                    </Link>
-                     <Link href='https://twitter.com/ZengMasters'>
-                                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                  <BsFillPersonLinesFill/> 
-                                </div>
-                    </Link>
+                        {SocialLinks.map(({id,child,href,download,target})=>(
+                            <Link key={id} href={href} download={download} target={target}>
+                                            <div className=' shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300' >
+                                            {child}
+                                            </div>
+                            </Link>
+                        ))}
+                    
                                 
-                               
-                               
-                               
                     </div>
                 </div>
             </div>
@@ -63,7 +89,7 @@ const Contacts = () => {
 
         <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-500 rounded-xl lg:p-4'>
         <div className='p-4'>
-       <form>
+    <form>
             <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                 <div className='flex flex-col'>
                     <label className='uppercase text-sm py-2'>Name</label>
@@ -80,7 +106,7 @@ const Contacts = () => {
                 <label className='uppercase text-sm py-2'>Email</label>
                 <input className='border-2 rounded-lg p-3 flex border-gray-300' type='email'/>    
             </div>
-             <div className='flex flex-col py-2'>
+            <div className='flex flex-col py-2'>
                 <label className='uppercase text-sm py-2'>Subject</label>
                 <input className='border-2 rounded-lg p-3 flex border-gray-300' type='text'/>    
             </div>
@@ -89,7 +115,7 @@ const Contacts = () => {
                 <textarea className='border-2 rounded-lg p-3 border-gray-300' rows={10}></textarea>    
             </div>
             <button className='w-full p-4 text-gray-100 mt-4'>Send message</button>
-       </form>
+    </form>
         </div>
         
         </div>
@@ -106,7 +132,7 @@ const Contacts = () => {
     </div>
 
     </div>
-  )
+)
 }
 
 export default Contacts

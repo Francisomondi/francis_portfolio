@@ -30,6 +30,49 @@ const Navbar = () => {
         }
     ]
 
+
+    const SocialLinks=[
+        {
+            id:1,
+            child: (
+                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                     <FaLinkedinIn/> 
+                </div>
+            ),
+            href:'https://www.linkedin.com/in/francis-omondi-958749172/',
+             target:'_blank'
+        },
+        {
+            id:2,
+            child: (
+                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                     <FaGithub/> 
+                </div>
+            ),
+            href:'https://github.com/Francisomondi',
+            target:'_blank'
+        },
+        {
+            id:3,
+            child: (
+                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                     <AiOutlineMail/> 
+                </div>
+            ),
+            href:'mailto:francisomondi17@gmail.com'
+        },
+        {
+            id:4,
+            child: (
+                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                     <BsFillPersonLinesFill/> 
+                </div>
+            ),
+            href:'/francis.pdf',
+            download: true
+        }
+    ]
+
    const [nav, setNav] = useState(false)
    const [shadow,setShadow]= useState(false)
 
@@ -95,29 +138,15 @@ const Navbar = () => {
                          <div className='pt-20'>
                             <p className='uppercase tracking-widest text-[#5651e5] font-bold'>Lets connect</p>
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                            <Link href='https://www.linkedin.com/in/francis-omondi-958749172/'>
-                              <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
-                                <FaLinkedinIn/> 
-                                </div>
-                            </Link>
-
-                               <Link href='https://github.com/Francisomondi'>
-                               <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
-                                <FaGithub/> 
-                                </div>
-                               </Link>
-
-                               <Link href='/'>
-                               <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
-                                <AiOutlineMail/> 
-                                </div>
-                               </Link>
-                                
-                                <Link href='https://twitter.com/ZengMasters'>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
-                                <BsFillPersonLinesFill/> 
-                                </div>
+                            
+                            {SocialLinks.map(({id,child,href,download,target})=>(
+                                 <Link key={id} href={href} download={download} target={target}>
+                                    <div className=' p-3 cursor-pointer hover: scale-105 ease-in duration-300' >
+                                     {child}
+                                    </div>
                                 </Link>
+                            ))}
+                               
                                 
                             </div>
                         </div>

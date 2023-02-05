@@ -14,19 +14,19 @@ const projects =[
   {id:1,
     src:arrayDestruct
   },
-  {id:1,
+  {id:2,
     src:installNode
   },
-  {id:1,
+  {id:3,
     src:reactParallax
   },
-  {id:1,
+  {id:4,
     src:reactSmooth
   },
-  {id:1,
+  {id:5,
     src:reactWeather
   },
-  {id:1,
+  {id:6,
     src:navbar
   },
 ]

@@ -35,7 +35,7 @@ const Navbar = () => {
         {
             id:1,
             child: (
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <FaLinkedinIn/> 
                 </div>
             ),
@@ -103,7 +103,7 @@ useEffect(()=>{
                 <div>
                     <ul className='hidden md:flex'>
                     {links.map(({id,link})=>(
-                            <li key={id} className='ml-10 text-sm uppercase hover: border-b font-medium hover:scale-105 duration-200'>{link}</li>
+                            <li key={id} className='ml-10 text-sm uppercase hover:border-b font-medium hover:scale-105 duration-500'>{link}</li>
 
                     ))}
 

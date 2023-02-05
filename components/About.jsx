@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import aziz from '../public/assets/aziz.jpg'
+import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 
 
 
@@ -24,7 +25,15 @@ const About = () => {
             balancing architectures. I focus on creating clean, robust code with
             exceptional security and I am able to achieve compatibility targets while
             meeting and exceeding customer demands</p>
-          <p className='py-2 text-gray-600 underline cursor-pointer'>Check out some of my projects</p>
+
+          <div>
+            <button className=' group w-fit px-6 py-3 my-2 flex items-center rounded-md cursor-pointer'>
+            Projects
+              <span className='group-hover:rotate-90 duration-500 '>
+              <MdOutlineKeyboardArrowRight size={25} className='ml-3'/>
+              </span>
+            </button>
+          </div>
         </div>
         <div className='w-full h-auto shadow-xl shadow-gray-800 rounded-xl flex items-center justify-center p-4 hover:scale-105 duration-300'>
           <Image className='rounded-xl' src={aziz} alt='my hero image'/>

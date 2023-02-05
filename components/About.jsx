@@ -8,7 +8,7 @@ import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 
 const About = () => {
   return (
-    <div id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
+    <div name='about' className='w-full md:h-screen p-2 flex items-center py-16'>
       <div className='max-w-[1024px] m-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
           <h2 className='py-4'>Who I Am </h2>

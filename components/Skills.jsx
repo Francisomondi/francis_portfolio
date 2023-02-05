@@ -56,7 +56,7 @@ const Skills = () => {
     },
   ]
   return (
-    <div id='skills' className='w-full lg:h-screen p-2'>
+    <div name='skills' className='w-full lg:h-screen p-2'>
         <div className='max-w-[1240px] max-auto flex flex-col justify-center h-full'>
         <h2 className='py-4'>What i can do</h2>
           <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8' >

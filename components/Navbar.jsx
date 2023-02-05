@@ -7,6 +7,29 @@ import {BsFillPersonLinesFill} from 'react-icons/bs'
 
 const Navbar = () => {
 
+    const links = [
+        {
+            id:1,
+            link:'Home'
+        },
+          {
+            id:2,
+            link:'About'
+        },
+          {
+            id:3,
+            link:'Skills'
+        },
+          {
+            id:4,
+            link:'Projects'
+        },
+          {
+            id:5,
+            link:'Contacts'
+        }
+    ]
+
    const [nav, setNav] = useState(false)
    const [shadow,setShadow]= useState(false)
 
@@ -36,21 +59,11 @@ const Navbar = () => {
               
                 <div>
                     <ul className='hidden md:flex'>
-                    <Link href='/'>
-                    <li className='ml-10 text-sm uppercase hover: border-b'>Home</li>
-                    </Link>
-                    <Link href='/#about'>
-                    <li className='ml-10 text-sm uppercase hover: border-b'>About</li>
-                    </Link>
-                    <Link href='/#skills'>
-                    <li className='ml-10 text-sm uppercase hover: border-b'>Skills</li>
-                    </Link>
-                    <Link href='/#projects'>
-                    <li className='ml-10 text-sm uppercase hover: border-b'>Projects</li>
-                    </Link>
-                    <Link href='/#contacts'>
-                    <li className='ml-10 text-sm uppercase hover: border-b'>Contacts</li>
-                    </Link>
+                    {links.map(({id,link})=>(
+                             <li key={id} className='ml-10 text-sm uppercase hover: border-b font-medium hover:scale-105 duration-200'>{link}</li>
+
+                    ))}
+
                     </ul>
                     <div onClick={handleNav} className='md:hidden'>
                        <AiOutlineMenu size={30}/>
@@ -74,22 +87,11 @@ const Navbar = () => {
 
                     <div className=' py-4 flex flex-col'>
                         <ul className='uppercase'>
-                            <Link href='/'>
-                                <li onClick={()=>setNav(false)} className='py-4 text-sm'>Home</li>
-                            </Link>
-                             <Link href='#about'>
-                                <li onClick={()=>setNav(false)} className='py-4 text-sm'>About</li>
-                            </Link>
-                             <Link href='#skills'>
-                                <li onClick={()=>setNav(false)} className='py-4 text-sm'>Skills</li>
-                            </Link>
-                             <Link href='#projects'>
-                                <l onClick={()=>setNav(false)}i className='py-4 text-sm'>Projects</l>
-                            </Link>
-                             <Link href='#contacts'>
-                                <li onClick={()=>setNav(false)} className='py-4 text-sm'>Contacts</li>
-                            </Link>
+                            {links.map(({id,link})=>(
+                                <li key={id} onClick={()=>setNav(false)} className='py-4 text-sm border-b font-medium hover:scale-105 duration-200'>{link}</li>
+                            ))}
                         </ul>
+
                          <div className='pt-20'>
                             <p className='uppercase tracking-widest text-[#5651e5] font-bold'>Lets connect</p>
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>

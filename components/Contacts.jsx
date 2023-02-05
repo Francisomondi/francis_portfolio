@@ -4,7 +4,7 @@ import React from 'react'
 import { AiOutlineMail, AiOutlineToTop } from 'react-icons/ai'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import c from '../public/assets/c.JPG'
+import c from '../public/assets/b.jpg'
 
 const Contacts = () => {
 

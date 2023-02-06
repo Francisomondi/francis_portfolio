@@ -1,4 +1,4 @@
-
+import {Link} from 'react-scroll'
 import React from 'react'
 import Image from 'next/image'
 import aziz from '../public/assets/aziz.jpg'
@@ -29,12 +29,15 @@ const About = () => {
             meeting and exceeding customer demands</p>
 
           <div>
+            <Link to='Projects' smooth='true' duration={500} >
             <button className=' group w-fit px-6 py-3 my-2 flex items-center rounded-md cursor-pointer'>
-            Projects
+             Projects
               <span className='group-hover:rotate-90 duration-500 '>
               <MdOutlineKeyboardArrowRight size={25} className='ml-3'/>
               </span>
             </button>
+           
+            </Link>
           </div>
         </div>
         <div className='w-full h-auto shadow-xl shadow-gray-800 rounded-xl flex items-center justify-center p-4 hover:scale-105 duration-300'>

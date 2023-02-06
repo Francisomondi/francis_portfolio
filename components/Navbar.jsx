@@ -103,7 +103,12 @@ useEffect(()=>{
                 <div>
                     <ul className='hidden md:flex'>
                     {links.map(({id,link})=>(
-                            <Link to={link} smooth='true' duration={500} key={id} className='ml-10 text-sm uppercase hover:border-b font-medium hover:scale-105 duration-500'>{link}</Link>
+                            <Link to={link}
+                            smooth='true'
+                            duration={500} key={id}
+                             className='ml-10 text-sm uppercase hover:border-b font-medium hover:scale-105 duration-500'>
+                                {link}
+                            </Link>
 
                     ))}
 
@@ -131,7 +136,14 @@ useEffect(()=>{
                     <div className=' py-4 flex flex-col'>
                         <ul className='uppercase'>
                             {links.map(({id,link})=>(
-                                <li key={id} onClick={()=>setNav(false)} className='py-4 text-sm border-b font-medium hover:scale-105 duration-200'>{link}</li>
+                                <Link key={id}
+                                to={link}
+                                 onClick={()=>setNav(false)}
+                                smooth='true'
+                                duration={500}>
+                                <li className='py-4 text-sm border-b font-medium hover:scale-105 duration-200'>{link}</li>
+                                </Link>
+                               
                             ))}
                         </ul>
 

@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import {Link} from 'react-scroll'
 import React, {useState,useEffect} from 'react'
 import {AiOutlineClose, AiOutlineMenu, AiOutlineMail} from 'react-icons/ai'
 import {FaLinkedinIn} from 'react-icons/fa'
@@ -103,7 +103,7 @@ useEffect(()=>{
                 <div>
                     <ul className='hidden md:flex'>
                     {links.map(({id,link})=>(
-                            <li key={id} className='ml-10 text-sm uppercase hover:border-b font-medium hover:scale-105 duration-500'>{link}</li>
+                            <Link to={link} smooth='true' duration={500} key={id} className='ml-10 text-sm uppercase hover:border-b font-medium hover:scale-105 duration-500'>{link}</Link>
 
                     ))}
 

@@ -50,7 +50,7 @@ const Contacts = () => {
         }
     ]
 return (
-    <div name='contacts' className='w-full lg:h-screen'>
+    <div name='Contacts' className='w-full lg:h-screen'>
     <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
     <p className='text-xl tracking-widest uppercase text-[#5b201d9e]'>Contacts</p>
     <h2 className='py-4'>Get In Touch</h2>
@@ -87,9 +87,9 @@ return (
 
         {/*left*/}
 
-        <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-500 rounded-xl lg:p-4'>
+        <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-500 rounded-xl lg:p-4' >
         <div className='p-4'>
-    <form action=''>
+    <form action='https://getform.io/f/f80c7360-7049-4c4f-b090-2479554ab011' method="POST">
             <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                 <div className='flex flex-col'>
                     <label className='uppercase text-sm py-2'>Name</label>

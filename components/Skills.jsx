@@ -15,73 +15,73 @@ const Skills = () => {
 
   const skills = [
     {
-      id:1,
+      id: 1,
       src: Html,
-      title:"Html"
+      title: "Html"
     },
     {
-      id:2,
+      id: 2,
       src: css,
-      title:"Css"
+      title: "Css"
     },
     {
-      id:3,
+      id: 3,
       src: javascript,
-      title:"Javascript"
+      title: "Javascript"
     },
     {
-      id:4,
+      id: 4,
       src: react,
-      title:"React"
+      title: "React"
     },
     {
-      id:5,
+      id: 5,
       src: node,
-      title:"Node"
+      title: "Node"
     },
     {
-      id:6,
+      id: 6,
       src: tailwind,
-      title:"Tailwind"
+      title: "Tailwind"
     },
     {
-      id:7,
+      id: 7,
       src: nextjs,
-      title:"Nextjs"
+      title: "Nextjs"
     },
     {
-      id:7,
+      id: 7,
       src: github,
-      title:"Github"
+      title: "Github"
     },
   ]
   return (
     <div name='Skills' className='w-full lg:h-screen p-2'>
-        <div className='max-w-[1240px] max-auto flex flex-col justify-center h-full'>
-        <h2 className='py-4'>What i can do</h2>
-          <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8' >
+      <div className='max-w-[1240px] max-auto flex flex-col justify-center h-full'>
+        <h2 className='py-4'>Skills</h2>
+        <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8' >
 
           {
-            skills.map(({id,src,title})=>(
+            skills.map(({ id, src, title }) => (
               <div key={id} className='py-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                   <div className='m-auto'>
-                    <Image src={src} alt='/' width={64} height={64}/>
+                    <Image src={src} alt='/' width={64} height={64} />
                   </div>
 
                   <div className='flex flex-col items-center justify-center'>
-                  <h2>{title}</h2>
+                    <h2>{title}</h2>
                   </div>
                 </div>
-            </div>
+              </div>
 
             ))
           }
-          
-        
 
-          </div>
+
+
         </div>
+      </div>
     </div>
   )
 }

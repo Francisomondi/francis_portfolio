@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import arrayDestruct from '../public/assets/portfolio/arrayDestruct.jpg'
-import installNode from '../public/assets/portfolio/installNode.jpg'
-import reactParallax from '../public/assets/portfolio/reactParallax.jpg'
-import reactSmooth from '../public/assets/portfolio/reactSmooth.jpg'
-import reactWeather from '../public/assets/portfolio/reactWeather.jpg'
-import navbar from '../public/assets/portfolio/navbar.jpg'
+import msafiri from '../public/assets/portfolio/logo.svg'
+import mawimbi from '../public/assets/portfolio/mawimbi-logo.jpg'
+import vidly from '../public/assets/portfolio/vidly.jpg'
+import prompto from '../public/assets/portfolio/prompt.jpg'
+import geoapi from '../public/assets/portfolio/geoapp.png'
+import sakakeja from '../public/assets/portfolio/sakakeja.jpeg'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 
 const Projects = () => {
@@ -14,14 +14,14 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      src: arrayDestruct,
-      title: "Fleet Management",
-      language: "React js",
-      href: "https://github.com/Francisomondi/Fleet-management"
+      src: msafiri,
+      title: "Msafiri carHub",
+      language: "Next Js",
+      href: "https://car-showcase-rimp.vercel.app/"
     },
     {
       id: 2,
-      src: installNode,
+      src: mawimbi,
       title: "Mawimbi",
       language: "Node js",
       href: "https://github.com/Francisomondi/mawimbi_reservation_code"
@@ -29,28 +29,28 @@ const Projects = () => {
     {
       id: 3,
 
-      src: reactWeather,
+      src: geoapi,
       title: "Andela Geo App",
       language: "Vanilla js",
       href: "https://github.com/Francisomondi/AndelaGeo-search"
     },
     {
       id: 4,
-      src: reactSmooth,
-      title: "StoryBook Api",
+      src: prompto,
+      title: "ChatGPT prompt Generator",
       language: "Node js",
-      href: "https://github.com/Francisomondi/storybookApp"
+      href: "https://github.com/Francisomondi/Promtopia"
     },
     {
       id: 5,
-      src: reactParallax,
+      src: vidly,
       title: "vidly Movies",
       language: "Node js",
       href: "https://github.com/Francisomondi/VidlyMovieApi"
     },
     {
       id: 6,
-      src: navbar,
+      src: sakakeja,
       title: "sakakeja",
       language: "Laravel",
       href: "https://github.com/Francisomondi/Sakakeja"
